@@ -1,13 +1,6 @@
 Attribute VB_Name = "mDatumsFunktionen"
 Option Explicit
 
-Sub AddFunctionTooltip()
-    Application.MacroOptions _
-        Macro:="TagDesJahres", _
-        Description:="Berechnet den Tag des Jahres für das angegebene Datum .Falls kein Datum angegeben ist, wird das aktuelle Datum verwendet", _
-        ArgumentDescriptions:=Array("Datum as Date")
-End Sub
-
 Public Function getAktuellesDatum() As String
     Dim aktdatum As String
     
